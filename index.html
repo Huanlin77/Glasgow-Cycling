@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Glasgow Cycling Analysis</title>
-
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <style>
@@ -105,7 +103,6 @@
   // Initialiser la carte centrée sur Glasgow
   var map = L.map('main-map').setView([55.8642, -4.2518], 12);
 
-  // Couche OpenCycleMap (meilleure pour vélo 🚴)
   L.tileLayer('https://api.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=c7f381d4cb7244278184ac0663f9d6b9', {
       maxZoom: 22,
       attribution: '&copy; OpenCycleMap & Thunderforest'
